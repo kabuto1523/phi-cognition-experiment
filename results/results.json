@@ -1,0 +1,288 @@
+{
+  "experiment": "The Phi Signature in Human Cognition",
+  "author": "Borja Azpiroz, 2026",
+  "phi": 1.618033988749895,
+  "phi_inv2": 0.38196601125010515,
+  "youden_v9": 0.386,
+  "band_analysis": {
+    "BGE-base": {
+      "mean_d": "0.3838353",
+      "band": "1/phi^2",
+      "band_value": 0.38196601125010515,
+      "delta": 0.0018692746519181624
+    },
+    "BGE-small": {
+      "mean_d": "0.33413708",
+      "band": "1/phi^2",
+      "band_value": 0.38196601125010515,
+      "delta": 0.0478289291501906
+    },
+    "E5-base": {
+      "mean_d": "0.16022822",
+      "band": "1/phi^4",
+      "band_value": 0.14589803375031543,
+      "delta": 0.014330188858250853
+    },
+    "E5-small": {
+      "mean_d": "0.1584333",
+      "band": "1/phi^4",
+      "band_value": 0.14589803375031543,
+      "delta": 0.012535269486645934
+    },
+    "GTE-base": {
+      "mean_d": "0.1714",
+      "band": "1/phi^4",
+      "band_value": 0.14589803375031543,
+      "delta": 0.02548868499968457
+    },
+    "GTE-small": {
+      "mean_d": "0.1526",
+      "band": "1/phi^4",
+      "band_value": 0.14589803375031543,
+      "delta": 0.006689856874684569
+    },
+    "Gemini-001": {
+      "mean_d": 0.10288427835575166,
+      "band": "1/phi^4",
+      "band_value": 0.14589803375031543,
+      "delta": 0.04301375539456377
+    },
+    "MPNet": {
+      "mean_d": "0.6513439",
+      "band": "1/phi",
+      "band_value": 0.6180339887498948,
+      "delta": 0.03330989333399803
+    },
+    "MiniLM-L6": {
+      "mean_d": "0.6372728",
+      "band": "1/phi",
+      "band_value": 0.6180339887498948,
+      "delta": 0.019238786423292464
+    },
+    "OpenAI-large": {
+      "mean_d": 0.5353696200268915,
+      "band": "1/phi",
+      "band_value": 0.6180339887498948,
+      "delta": 0.08266436872300331
+    },
+    "OpenAI-small": {
+      "mean_d": 0.5381250590465432,
+      "band": "1/phi",
+      "band_value": 0.6180339887498948,
+      "delta": 0.07990892970335162
+    }
+  },
+  "bootstrap": {
+    "BGE-base": {
+      "mean": "0.3838353",
+      "ci_low": 0.3737137220799923,
+      "ci_high": 0.39392023980617524,
+      "contains_phi2": "True",
+      "contains_youden": "True",
+      "delta_phi2": 0.0018692746519181624
+    },
+    "BGE-small": {
+      "mean": "0.33413708",
+      "ci_low": 0.32561408504843714,
+      "ci_high": 0.3426187880337238,
+      "contains_phi2": "False",
+      "contains_youden": "False",
+      "delta_phi2": 0.0478289291501906
+    },
+    "GTE-base": {
+      "mean": "0.1714",
+      "ci_low": 0.1678436279296875,
+      "ci_high": 0.1748046875,
+      "contains_phi2": "False",
+      "contains_youden": "False",
+      "delta_phi2": 0.21057929250010515
+    },
+    "GTE-small": {
+      "mean": "0.1526",
+      "ci_low": 0.1488037109375,
+      "ci_high": 0.15625,
+      "contains_phi2": "False",
+      "contains_youden": "False",
+      "delta_phi2": 0.22937812062510515
+    }
+  },
+  "cascade": {
+    "cascade_per_model": {
+      "BGE-base": {
+        "d_internal": 0.3783237805642639,
+        "d_integrator": 0.3812363516353111,
+        "d_pseudo": 0.3847259780684999,
+        "d_noise": 0.3916026843575653,
+        "full_cascade": "True",
+        "int_lt_noise": "True"
+      },
+      "BGE-small": {
+        "d_internal": 0.3315918716490298,
+        "d_integrator": 0.3333500788415874,
+        "d_pseudo": 0.33372909042701676,
+        "d_noise": 0.33837027414071785,
+        "full_cascade": "True",
+        "int_lt_noise": "True"
+      },
+      "E5-base": {
+        "d_internal": 0.15946081456399863,
+        "d_integrator": 0.15890816434807717,
+        "d_pseudo": 0.16013711804040331,
+        "d_noise": 0.16307764297740615,
+        "full_cascade": "False",
+        "int_lt_noise": "True"
+      },
+      "E5-small": {
+        "d_internal": 0.1578401165781015,
+        "d_integrator": 0.1576576692392937,
+        "d_pseudo": 0.15810783027189626,
+        "d_noise": 0.1606630305076447,
+        "full_cascade": "False",
+        "int_lt_noise": "True"
+      },
+      "GTE-base": {
+        "d_internal": 0.16955244103204042,
+        "d_integrator": 0.17075267264441057,
+        "d_pseudo": 0.17135760569355318,
+        "d_noise": 0.17405791652293395,
+        "full_cascade": "True",
+        "int_lt_noise": "True"
+      },
+      "GTE-small": {
+        "d_internal": 0.15155937214159823,
+        "d_integrator": 0.15272556196594897,
+        "d_pseudo": 0.1520881989510453,
+        "d_noise": 0.1541858967797022,
+        "full_cascade": "False",
+        "int_lt_noise": "True"
+      },
+      "Gemini-001": {
+        "d_internal": 0.10149630061098644,
+        "d_integrator": 0.10275795863992379,
+        "d_pseudo": 0.1021775637640428,
+        "d_noise": 0.10548688555164266,
+        "full_cascade": "False",
+        "int_lt_noise": "True"
+      },
+      "MPNet": {
+        "d_internal": 0.6499040764375738,
+        "d_integrator": 0.6486646697778085,
+        "d_pseudo": 0.6500608802154477,
+        "d_noise": 0.6587111743134192,
+        "full_cascade": "False",
+        "int_lt_noise": "True"
+      },
+      "MiniLM-L6": {
+        "d_internal": 0.6370103748372031,
+        "d_integrator": 0.636048343833923,
+        "d_pseudo": 0.6349248855664992,
+        "d_noise": 0.6429834053547457,
+        "full_cascade": "False",
+        "int_lt_noise": "True"
+      },
+      "OpenAI-large": {
+        "d_internal": 0.5334186886633984,
+        "d_integrator": 0.5345672324316553,
+        "d_pseudo": 0.5307696961309329,
+        "d_noise": 0.5455341640230336,
+        "full_cascade": "False",
+        "int_lt_noise": "True"
+      },
+      "OpenAI-small": {
+        "d_internal": 0.5363515722155152,
+        "d_integrator": 0.5388802797240871,
+        "d_pseudo": 0.5348426054979318,
+        "d_noise": 0.5437520031137042,
+        "full_cascade": "False",
+        "int_lt_noise": "True"
+      }
+    },
+    "n_full": 3,
+    "n_models": 11,
+    "n_int_lt_noise": 11,
+    "t_stat": -5.9892281951062785,
+    "p_val": 0.0001340212769524975
+  },
+  "meta_analysis": {
+    "r": -0.08503898183519791,
+    "ci_low": -0.15668582754363874,
+    "ci_high": -0.012501791961976977,
+    "z": -2.2968706740599885,
+    "p": 0.021626148368468767,
+    "n_negative": 8,
+    "n_models": 11,
+    "individual_rs": [
+      -0.2816554742191686,
+      -0.12994490154788968,
+      -0.1664626936863537,
+      -0.13715913414079983,
+      -0.18729752175817116,
+      -0.0752763669340686,
+      -0.06841218012112561,
+      -0.02878857145098465,
+      0.017994959741941596,
+      0.05359359362529843,
+      0.07898792247068857
+    ],
+    "model_names": [
+      "BGE-base",
+      "BGE-small",
+      "E5-base",
+      "E5-small",
+      "GTE-base",
+      "GTE-small",
+      "Gemini-001",
+      "MPNet",
+      "MiniLM-L6",
+      "OpenAI-large",
+      "OpenAI-small"
+    ]
+  },
+  "permutation_bge": {
+    "r": -0.2816554742191686,
+    "p_perm": 0.0201
+  },
+  "cognitive_ratios": {
+    "conf_ratio": {
+      "mean": 1.6878274040185937,
+      "ci": [
+        1.546307201607777,
+        1.8438752135110767
+      ],
+      "contains_phi": "True"
+    },
+    "rt_ratio": {
+      "mean": 0.8322844198537184,
+      "ci": [
+        0.768832590376245,
+        0.8994750999129145
+      ]
+    },
+    "padilla_prediction": {
+      "mean": 0.4182218974264695,
+      "ci": [
+        0.3726246792637513,
+        0.46310102380654133
+      ],
+      "contains_phi2": "True"
+    }
+  },
+  "robustness": {
+    "BGE-base": {
+      "r_full": -0.2816554742191686,
+      "loo_min": -0.32675813470324244,
+      "loo_max": -0.24453778403341433,
+      "sign_changes": 0,
+      "max_influence": 0.04510266048407385,
+      "n_outliers": 4
+    },
+    "GTE-base": {
+      "r_full": -0.18729752175817116,
+      "loo_min": -0.23237010481726597,
+      "loo_max": -0.1366495193790029,
+      "sign_changes": 0,
+      "max_influence": 0.05064800237916825,
+      "n_outliers": 3
+    }
+  }
+}
